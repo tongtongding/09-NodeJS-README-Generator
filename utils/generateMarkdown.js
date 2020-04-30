@@ -7,39 +7,39 @@ ${data.project}
 ${data.description} 
 ### :books: Table of Contents
 
-*[Installation](#installation)
-*[Usage](#usage)
-*[License](#license)
-*[Contributing](#contributing)
-*[Tests](#tests)
-*[Questions](#questions)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
-### :computer: Installation
+### <a name="installation"></a> :computer: Installation
 
 To install necessary dependencies, run the following command:
 ${data.command}
 
 
-###:floppy_disk: Usage
+### <a name="usage"></a> :floppy_disk: Usage
 ${data.usage} 
 
-###:book: License
+### <a name="license"></a> :book: License
 License used : ![license](https://img.shields.io/badge/license-${data.license}-GREEN)
 
-###:handshake: Contributing
+### <a name="contributing"></a> :handshake: Contributing
  ${data.contribute} 
 
-###Tests
+### <a name="tests"></a> Tests
 ${data.test} 
 
   
-###Author:
+### Author:
 :smile: Name: ${data.author} [![githubfollower](https://img.shields.io/github/followers/${data.username}?style=social)](https://github.com/tongtongding?tab=followers)
 :e-mail: Email: ${data.email}
 
   <img src="${data.picture}" alt="avatar">
 
-###:poultry_leg: Questions 
+### <a name="questions"></a> :poultry_leg: Questions 
 
   If you have any questions about the repo, feel free to contact ${data.author}
   
