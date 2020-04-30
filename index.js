@@ -26,8 +26,9 @@ inquirer
     name:"license",
     choices: [
         "MIT",
-        "APACHE 2.0",
-        "GPL 3.0",
+        "APACHE_2.0",
+        "GPL_3.0",
+        "BSD_3",
         "None"
       ]
 },
@@ -39,7 +40,7 @@ inquirer
 },
 { 
     type:"input",
-    message:"How do you use your repo?",
+    message:"How does the user need to know about using the repo?",
     name:"usage",
 },
 { 
@@ -50,21 +51,33 @@ inquirer
 },
 { 
     type:"input",
-    message:"What do people do to contribute to repo",
+    message:"What do people do to contribute to repo?",
     name:"contribute",
+},
+{ 
+    type:"input",
+    message:"Who is the author?",
+    name:"author",
 },
 
 ])
 .then((res)=>{
-    // console.log(res);
-    
+    // console.log(res); 
     const gitGubURL = `https://api.github.com/users/${res.username}`
     axios
     .get(gitGubURL)
     .then((response)=>{
-        // console.log(response)
-        res.email = response.data.email;
+        console.log(response)
+
+        if(response.data.email === null){
+            res.email= "No Email contact Information";
+        }else{
+            res.email = response.data.email;
+        }
+       
         res.picture = response.data.avatar_url;
+        // res.email = response[0].payload.commits.author.email;
+        // res.picture = response[0].actor.avatar_url;
         // console.log(res)
         const info = generateMarkdown(res);
         fs.writeFile("README.md",info,(err)=>{
