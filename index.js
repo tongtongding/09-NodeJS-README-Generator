@@ -78,7 +78,7 @@ inquirer
         res.picture = response.data.avatar_url;
         // res.email = response[0].payload.commits.author.email;
         // res.picture = response[0].actor.avatar_url;
-        // console.log(res)
+        console.log(res)
         const info = generateMarkdown(res);
         fs.writeFile("README.md",info,(err)=>{
             if(err){

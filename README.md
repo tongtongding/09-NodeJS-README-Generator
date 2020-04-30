@@ -1,9 +1,9 @@
 
 
 ### :dart: Project Title:
-Readme 
+ReadMe Generator 
 ### :pencil2: Description
-reame 
+Save the user time to write a README 
 ### :books: Table of Contents
 
 * [Installation](#installation)
@@ -20,20 +20,21 @@ npm i
 
 
 ### <a name="usage"></a> :floppy_disk: Usage
-reame 
+npm install 
 
 ### <a name="license"></a> :book: License
 License used : ![license](https://img.shields.io/badge/license-MIT-GREEN)
 
 ### <a name="contributing"></a> :handshake: Contributing
-  
+ Contributions are welcome! 
 
 ### <a name="tests"></a> Tests
-npm test 
+``` npm test ``` 
 
   
 ### Author:
 :smile: Name: Tongtong Ding [![githubfollower](https://img.shields.io/github/followers/tongtongding?style=social)](https://github.com/tongtongding?tab=followers)
+
 :e-mail: Email: No Email contact Information
 
   <img src="https://avatars2.githubusercontent.com/u/59786540?v=4" alt="avatar">
