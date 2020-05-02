@@ -5,7 +5,7 @@ ReadMe Generator
 ### :pencil2: Description
 Save the user time to write a README 
 ### Demo
-[demo](https://drive.google.com/file/d/1WbRGSQLiazVvSYBrHnBJz_RSpMw1fNJW/view)
+[Demo video](https://drive.google.com/file/d/1WbRGSQLiazVvSYBrHnBJz_RSpMw1fNJW/view)
 
 ### :books: Table of Contents
 
