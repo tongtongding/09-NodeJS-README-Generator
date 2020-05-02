@@ -21,6 +21,17 @@ inquirer
     name:"description",
 },
 { 
+    type:"input",
+    message:"What command should be run to install dependencies?",
+    name:"command",
+    default:"npm i"
+},
+{ 
+    type:"input",
+    message:"How does the user need to know about using the repo?",
+    name:"usage",
+},
+{ 
     type:"list",
     message:"What kind of license your project have?",
     name:"license",
@@ -31,17 +42,6 @@ inquirer
         "BSD_3",
         "None"
       ]
-},
-{ 
-    type:"input",
-    message:"What command should be run to install dependencies?",
-    name:"command",
-    default:"npm i"
-},
-{ 
-    type:"input",
-    message:"How does the user need to know about using the repo?",
-    name:"usage",
 },
 { 
     type:"input",
@@ -76,8 +76,6 @@ inquirer
         }
        
         res.picture = response.data.avatar_url;
-        // res.email = response[0].payload.commits.author.email;
-        // res.picture = response[0].actor.avatar_url;
         console.log(res)
         const info = generateMarkdown(res);
         fs.writeFile("README.md",info,(err)=>{

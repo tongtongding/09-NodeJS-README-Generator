@@ -17,7 +17,8 @@ ${data.description}
 ### <a name="installation"></a> :computer: Installation
 
 To install necessary dependencies, run the following command:
-${data.command}
+
+\`\`\` ${data.command} \`\`\`
 
 
 ### <a name="usage"></a> :floppy_disk: Usage

@@ -16,11 +16,12 @@ Save the user time to write a README
 ### <a name="installation"></a> :computer: Installation
 
 To install necessary dependencies, run the following command:
-npm i
+
+``` npm i ```
 
 
 ### <a name="usage"></a> :floppy_disk: Usage
-npm install 
+npm index.js 
 
 ### <a name="license"></a> :book: License
 License used : ![license](https://img.shields.io/badge/license-MIT-GREEN)
