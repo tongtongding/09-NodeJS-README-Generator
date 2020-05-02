@@ -6,7 +6,7 @@ ${data.project}
 ### :pencil2: Description
 ${data.description} 
 
-### Demo:
+### :tv: Demo:
 [Demo Video](${data.demo})
 
 ### :books: Table of Contents

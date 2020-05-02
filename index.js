@@ -80,7 +80,7 @@ inquirer
     .get(gitGubURL)
     .then((response)=>{
         // console.log(response)
-
+        
         if(response.data.email === null){
             res.email= "No Email contact Information";
         }else{
@@ -98,8 +98,6 @@ inquirer
         });
 
     })
-
-
 })
 .catch((err)=>{
     console.log(err)
