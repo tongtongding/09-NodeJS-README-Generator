@@ -20,6 +20,11 @@ inquirer
     message:"Please write a short description about your project",
     name:"description",
 },
+{
+    type:"input",
+    message:"Do you have a demo video? If so, please enter the link here. Otherwise, please enter NO",
+    name:"demo",
+},
 { 
     type:"input",
     message:"What command should be run to install dependencies?",
@@ -64,10 +69,17 @@ inquirer
 .then((res)=>{
     // console.log(res); 
     const gitGubURL = `https://api.github.com/users/${res.username}`
+
+    if(res.demo === "NO"){
+        res.demo = "No Demo Video available"
+    }else{
+        res.demo = res.demo
+    }
+    
     axios
     .get(gitGubURL)
     .then((response)=>{
-        console.log(response)
+        // console.log(response)
 
         if(response.data.email === null){
             res.email= "No Email contact Information";
@@ -76,7 +88,7 @@ inquirer
         }
        
         res.picture = response.data.avatar_url;
-        console.log(res)
+        // console.log(res)
         const info = generateMarkdown(res);
         fs.writeFile("README.md",info,(err)=>{
             if(err){

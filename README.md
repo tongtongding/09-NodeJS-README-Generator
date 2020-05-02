@@ -3,7 +3,11 @@
 ### :dart: Project Title:
 ReadMe Generator 
 ### :pencil2: Description
-Save the user time to write a README 
+Save the user time to write a professional ReadMe file 
+
+### Demo:
+[Demo Video](https://drive.google.com/file/d/1WbRGSQLiazVvSYBrHnBJz_RSpMw1fNJW/view)
+
 ### :books: Table of Contents
 
 * [Installation](#installation)
@@ -21,13 +25,13 @@ To install necessary dependencies, run the following command:
 
 
 ### <a name="usage"></a> :floppy_disk: Usage
-npm index.js 
+ npm index.js
 
 ### <a name="license"></a> :book: License
 License used : ![license](https://img.shields.io/badge/license-MIT-GREEN)
 
 ### <a name="contributing"></a> :handshake: Contributing
- Contributions are welcome! 
+ Contributions are welcome! Please contact the Author 
 
 ### <a name="tests"></a> Tests
 ``` npm test ``` 

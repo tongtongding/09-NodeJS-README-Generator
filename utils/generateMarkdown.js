@@ -5,6 +5,10 @@ function generateMarkdown(data) {
 ${data.project} 
 ### :pencil2: Description
 ${data.description} 
+
+### Demo:
+[Demo Video](${data.demo})
+
 ### :books: Table of Contents
 
 * [Installation](#installation)
@@ -22,7 +26,7 @@ To install necessary dependencies, run the following command:
 
 
 ### <a name="usage"></a> :floppy_disk: Usage
-${data.usage} 
+ ${data.usage}
 
 ### <a name="license"></a> :book: License
 License used : ![license](https://img.shields.io/badge/license-${data.license}-GREEN)
